@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout 
+        android:layout_width="240dip"
+        android:layout_height="240dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background">
+    
+    <RelativeLayout
+        android:id="@+id/fun_main_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" >
+		
+        <RelativeLayout 
+            android:id="@+id/whitedot_up_1"
+           	android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/home"
+            android:onClick="clickOnApplication" >
+            
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="应用"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+            	android:layout_centerHorizontal="true" />
+            
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/whitedot_up_2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home"
+            android:onClick="clickOnGuesture" />
+
+        <ImageView
+            android:id="@+id/whitedot_middle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="clickOnFavorite" />
+
+        <ImageView
+            android:id="@+id/whitedot_middle_2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:onClick="clickOnBack" />
+
+        <ImageView
+            android:id="@+id/whitedot_middle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="clickOnDevice" />
+
+        <RelativeLayout 
+            android:id="@+id/whitedot_down_2"
+           	android:layout_width="100dip"
+            android:layout_height="80dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home"
+            android:onClick="clickOnMainscreen" >
+            
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="主屏幕"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+            	android:layout_centerHorizontal="true" />
+            
+        </RelativeLayout>
+        
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
